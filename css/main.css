@@ -6,6 +6,19 @@
   padding-left: 15px;
 }
 
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
 .logo {
   color: #000000;
   font-family: Raleway, sans-serif;
@@ -150,6 +163,47 @@
   margin-right: 10px;
 }
 
+.hero {
+  text-align: center;
+  background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -167,7 +221,7 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden.modal {
+.backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.1);
           transform: translate(-50%, -50%) scale(1.1);
 }
@@ -289,7 +343,7 @@
   text-align: start;
   padding: 12px 16px;
   height: 120px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -304,7 +358,7 @@
 
 .comment input:not(:placeholder-shown) {
   color: #212121;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -317,27 +371,7 @@
   margin-bottom: 30px;
 }
 
-.icon-box {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  border: 2px solid #212121;
-  margin-right: 8.38px;
-}
-
-.checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.checkbox-label {
+.agreement_label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,37 +383,80 @@
           justify-content: center;
 }
 
-.link-label {
-  color: var(--accent-color);
+.agreement_label-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.icon-modal {
+.agreement_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.agreement_label-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreement_label-checkbox-link {
+  color: #2196f3;
+}
+
+.icon-box {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  margin-right: 8.38px;
+}
+
+.form-field_icon {
   position: relative;
+}
+
+.form-field_icon input {
+  padding-left: 42px;
 }
 
 .icon-input {
   position: absolute;
   top: 11px;
   left: 12px;
-  -webkit-transition: var(--fill-animation);
-  transition: var(--fill-animation);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .input:hover + .icon-input,
 .input:focus + .icon-input {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
-.icon-modal input {
-  padding-left: 42px;
-}
-
-.checkbox:checked + .icon-box {
-  background-color: var(--accent-color);
+.agreement_label-checkbox:checked + .icon-box {
+  background-color: #2196f3;
   background-image: url("../images/icon check (1).svg");
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
