@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
 
-  & .link {
+  & .footer_item-link {
    color: rgba(255, 255, 255, 0.6);
   }
 
@@ -42,7 +42,7 @@
   margin-bottom: 9px;
 }
 
-.footer_item .link {
+ .footer_item-link {
   text-decoration-line: none;
 }
 
@@ -85,11 +85,11 @@
   fill: $background-color;
 }
 
-& .social {
+& .social_item {
   background: rgba(255, 255, 255, 0.1);
 }
 
-& .social:hover {
+& .social_item:hover {
   background-color: $accent-color;
 }
 

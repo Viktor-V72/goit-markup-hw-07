@@ -765,7 +765,7 @@ img {
   padding: 0;
 }
 
-.footer_list .link {
+.footer_list .footer_item-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -778,7 +778,7 @@ img {
   margin-bottom: 9px;
 }
 
-.footer_item .link {
+.footer_item-link {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
@@ -816,11 +816,11 @@ img {
   fill: #ffffff;
 }
 
-.no-margin .social {
+.no-margin .social_item {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.no-margin .social:hover {
+.no-margin .social_item:hover {
   background-color: #2196f3;
 }
 
